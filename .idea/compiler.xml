@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-parent" />
+        <module name="springcloud-2.0-eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="springcloud-2.0-eureka-server" target="1.8" />
       <module name="springcloud-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-2.0-eureka-server" options="-parameters" />
       <module name="springcloud-parent" options="-parameters" />
     </option>
   </component>
